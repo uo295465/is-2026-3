@@ -6,7 +6,7 @@ respuesta = dns.resolver.resolve('gmail.com', 'MX')
 
 # Ordenar los servidores según su prioridad
 servidores = sorted(respuesta, key=lambda registro: registro.preference)
-ss
+
 # Recorrer los servidores MX
 for registro in servidores:
 
