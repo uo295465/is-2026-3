@@ -1,0 +1,30 @@
+desde carpeta incial
+cd ~/node_exporter-1.12.1.linux-amd64
+./node_exporter
+curl -s http://localhost:9100/metrics | grep node_cpu
+curl -s http://localhost:9100/metrics | grep node_memory
+
+
+abrir prometeus
+cd ~/prometheus-3.15.0.linux-amd64
+./prometheus --version
+$ sudo systemctl daemon-reload
+$ sudo systemctl start prometheus
+$ systemctl status prometheus
+$ sudo systemctl enable prometheus
+
+curl -I http://localhost:
+curl http://localhost:9090
+
+
+grafana
+sudo systemctl start grafana-server
+sudo systemctl status grafana-server
+http://192.168.0.21:3000 desde firefox
+admin y contraseña
+
+alert manager 
+sudo systemctl start alertmanager
+sudo systemctl status alertmanager
+sudo systemctl enable alertmanager
+http://192.168.0.21:9093
