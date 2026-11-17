@@ -5,3 +5,7 @@ curl -i http://127.0.0.1/health
 $ curl http://127.0.0.1/metrics
 $ curl http://127.0.0.1/health
 $ curl http://127.0.0.1/api/amigos
+
+http GET localhost:5000/api/amigos
+http GET localhost:5000/api/amigo/1
+http GET localhost:5000/api/amigo/byName/sergio
